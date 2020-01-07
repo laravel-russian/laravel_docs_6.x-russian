@@ -16,13 +16,13 @@
     - [Service Providers](/docs/{{version}}/providers)
     - [Facades](/docs/{{version}}/facades)
     - [Contracts](/docs/{{version}}/contracts)
-- ## The Basics
-    - [Routing](/docs/{{version}}/routing)
-    - [Middleware](/docs/{{version}}/middleware)
-    - [CSRF Protection](/docs/{{version}}/csrf)
-    - [Controllers](/docs/{{version}}/controllers)
-    - [Requests](/docs/{{version}}/requests)
-    - [Responses](/docs/{{version}}/responses)
+- ## Основы
+    - [Машрутизация - Routing](/docs/{{version}}/routing)
+    - [Посредникик - Middleware](/docs/{{version}}/middleware)
+    - [Защита - CSRF Protection](/docs/{{version}}/csrf)
+    - [Контролеры - Controllers](/docs/{{version}}/controllers)
+    - [Запросы - Requests](/docs/{{version}}/requests)
+    - [Ответы - Responses](/docs/{{version}}/responses)
     - [Views](/docs/{{version}}/views)
     - [URL Generation](/docs/{{version}}/urls)
     - [Session](/docs/{{version}}/session)
@@ -85,3 +85,8 @@
     - [Scout](/docs/{{version}}/scout)
     - [Socialite](/docs/{{version}}/socialite)
     - [Telescope](/docs/{{version}}/telescope)
+
+<style type="text/css">
+    .sidebar_layout .sidebar nav .navigation_contain ul li h2 { font-weight: 700; }
+    .docs_main h1 + ul li a { font-weight: 600;}    
+</style>

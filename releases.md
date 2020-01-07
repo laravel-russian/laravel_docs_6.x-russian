@@ -1,56 +1,54 @@
-# Release Notes
+# Заметки релиза
 
-- [Versioning Scheme](#versioning-scheme)
-- [Support Policy](#support-policy)
+- [Схема Версионирования](#versioning-scheme)
+- [Политика поддержки](#support-policy)
 - [Laravel 6](#laravel-6)
 
 <a name="versioning-scheme"></a>
-## Versioning Scheme
+## Схема Версионирования
 
-Laravel and its other first-party packages follow [Semantic Versioning](https://semver.org). Major framework releases are released every six months (February and August), while minor and patch releases may be released as often as every week. Minor and patch releases should **never** contain breaking changes.
+Laravel и другие сторонние пакеты следуют схемы вресионирования [Semantic Versioning](https://semver.org). Основные выпуски фреймворка выпускаются каждые шесть месяцев (февраль и август), в то время как небольшие выпуски и патчи могут выпускаться так же часто, как и каждую неделю. Незначительные и патч-релизы никогда не должны содержать критических изменений.
 
-When referencing the Laravel framework or its components from your application or package, you should always use a version constraint such as `^6.0`, since major releases of Laravel do include breaking changes. However, we strive to always ensure you may update to a new major release in one day or less.
+При обращении к платформе Laravel или ее компонентам из вашего приложения или пакета вы всегда должны use ограничение версии, такое как ^ 6.0, поскольку основные выпуски Laravel действительно содержат критические изменения. Однако мы всегда стремимся к тому, чтобы вы могли обновиться до новой основной версии за один день или меньше.
 
 <a name="support-policy"></a>
-## Support Policy
+## Политика поддержки
 
-For LTS releases, such as Laravel 6, bug fixes are provided for 2 years and security fixes are provided for 3 years. These releases provide the longest window of support and maintenance. For general releases, bug fixes are provided for 6 months and security fixes are provided for 1 year. For all additional libraries, including Lumen, only the latest release receives bug fixes. In addition, please review the database versions [supported by Laravel](/docs/{{version}}/database#introduction).
+Для выпусков LTS ( англ. Long-Term Support; дословно "поддержка в течение длительного периода" ), таких как Laravel 6, исправления ошибок предоставляются в течение 2 лет, а исправления безопасности - в течение 3 лет. Эти выпуски предоставляют самое длинное окно поддержки и обслуживания. Для общих выпусков исправления ошибок предоставляются в течение 6 месяцев, а исправления безопасности - в течение 1 года. Для всех дополнительных библиотек, включая Lumen, только последний выпуск получает исправления ошибок. Кроме того, пожалуйста, просмотрите версии [базы данных](/docs/{{version}}/database#introduction).
 
-| Version | Release | Bug Fixes Until | Security Fixes Until |
+| Версия | Релиз | Исправления багов до | Исправления безопасности до |
 | --- | --- | --- | --- |
-| 5.5 (LTS) | August 30th, 2017 | August 30th, 2019 | August 30th, 2020 |
-| 5.6 | February 7th, 2018 | August 7th, 2018 | February 7th, 2019 |
-| 5.7 | September 4th, 2018 | March 4th, 2019 | September 4th, 2019 |
-| 5.8 | February 26th, 2019 | August 26th, 2019 | February 26th, 2020 |
-| 6 (LTS) | September 3rd, 2019 | September 3rd, 2021 | September 3rd, 2022 |
+| 5,5 (LTS) | 30 августа 2017 года | 30 августа 2019 года | 30 августа 2020 года |
+| 5.6 | 7 февраля 2018 | 7 августа 2018 года | 7 февраля 2019 |
+| 5.7 | 4 сентября 2018 года | 4 марта 2019 года | 4 сентября 2019 года |
+| 5.8 | 26 февраля 2019 | 26 августа 2019 | 26 февраля 2020 |
+| 6 (LTS) | 3 сентября 2019 | 3 сентября 2021 года | 3 сентября 2022 года |
 
 <a name="laravel-6"></a>
 ## Laravel 6
 
-Laravel 6 (LTS) continues the improvements made in Laravel 5.8 by introducing semantic versioning, compatibility with [Laravel Vapor](https://vapor.laravel.com), improved authorization responses, job middleware, lazy collections, subquery improvements, the extraction of frontend scaffolding to the `laravel/ui` Composer package, and a variety of other bug fixes and usability improvements.
+Laravel 6 (LTS) продолжает усовершенствования, внесенные в Laravel 5.8, путем введения семантического управления версиями, совместимости с [Laravel Vapor](https://vapor.laravel.com), улучшенных ответов авторизации, промежуточного программного обеспечения, ленивых коллекций, улучшений подзапросов, извлечения каркасов внешнего интерфейса в `laravel/ui` Composer, а также множество других исправлений ошибок и улучшений юзабилити.
 
-### Semantic Versioning
+### Семантическое управление версиями
 
-The Laravel framework (`laravel/framework`) package now follows the [semantic versioning](https://semver.org/) standard. This makes the framework consistent with the other first-party Laravel packages which already followed this versioning standard. The Laravel release cycle will remain unchanged.
+Пакет Laravel Framework (`laravel/framework`) теперь соответствует стандарту [семантическое управление версиями](https://semver.org/). Это делает платформу совместимой с другими первыми пакетами Laravel, которые уже следовали этому стандарту версий. Цикл выпуска Laravel останется неизменным.
 
-### Laravel Vapor Compatibility
+### Совместимость с Vapor Laravel
 
-_Laravel Vapor was built by [Taylor Otwell](https://github.com/taylorotwell)_.
+_Laravel Vapor был построен [Тейлор Отвелл](https://github.com/taylorotwell)_.
+Laravel 6 обеспечивает совместимость с [Laravel Vapor](https://vapor.laravel.com), автоматически масштабируемой платформой для развертывания без сервера для Laravel. Vapor демонстрирует сложность управления приложениями Laravel в AWS Lambda, а также сопряжения этих приложений с очередями SQS, базами данных, кластерами Redis, сетями, CloudFront CDN и многим другим.
 
-Laravel 6 provides compatibility with [Laravel Vapor](https://vapor.laravel.com), an auto-scaling serverless deployment platform for Laravel. Vapor abstracts the complexity of managing Laravel applications on AWS Lambda, as well as interfacing those applications with SQS queues, databases, Redis clusters, networks, CloudFront CDN, and more.
+### Улучшенные исключения через зажигание
 
-### Improved Exceptions Via Ignition
+Laravel 6 поставляется с [Ignition](https://github.com/facade/ignition), новой страницей подробностей исключений с открытым исходным кодом, созданной Freek Van der Herten и Marcel Pociot. Ignition предлагает много преимуществ по сравнению с предыдущими выпусками, таких как улучшенная обработка файла ошибок Blade и номера строки, выполнимые решения для общих проблем, редактирование кода, совместное использование исключений и улучшенный UX.
 
-Laravel 6 ships with [Ignition](https://github.com/facade/ignition), a new open source exception detail page created by Freek Van der Herten and Marcel Pociot. Ignition offers many benefits over previous releases, such as improved Blade error file and line number handling, runnable solutions for common problems, code editing, exception sharing, and an improved UX.
+### Улучшенные ответы авторизации
 
-### Improved Authorization Responses
-
-_Improved authorization responses were implemented by [Gary Green](https://github.com/garygreen)_.
-
-In previous releases of Laravel, it was difficult to retrieve and expose custom authorization messages to end users. This made it difficult to explain to end-users exactly why a particular request was denied. In Laravel 6, this is now much easier using authorization response messages and the new `Gate::inspect` method. For example, given the following policy method:
+_Улучшенные ответы на авторизацию были реализованы [Гари Грин](https://github.com/garygreen)_.
+В предыдущих выпусках Laravel было сложно получать и предоставлять пользовательские сообщения авторизации конечным пользователям. Это затрудняло объяснение конечным пользователям, почему конкретный запрос был отклонен. В Laravel 6 это теперь намного проще, используя ответные сообщения авторизации и новый метод `Gate::inspect`. Например, учитывая следующий метод политики:
 
     /**
-     * Determine if the user can view the given flight.
+     * Определите, может ли пользователь просматривать данный рейс.
      *
      * @param  \App\User  $user
      * @param  \App\Flight  $flight
@@ -61,7 +59,7 @@ In previous releases of Laravel, it was difficult to retrieve and expose custom 
         return $this->deny('Explanation of denial.');
     }
 
-The authorization policy's response and message may be easily retrieved using the `Gate::inspect` method:
+Ответ и сообщение политики авторизации могут быть легко получены с помощью метода `Gate::inspect`:
 
     $response = Gate::inspect('view', $flight);
 
@@ -73,7 +71,7 @@ The authorization policy's response and message may be easily retrieved using th
         echo $response->message();
     }
 
-In addition, these custom messages will automatically be returned to your frontend when using helper methods such as `$this->authorize` or `Gate::authorize` from your routes or controllers.
+Кроме того, эти пользовательские сообщения будут автоматически возвращаться на ваш веб-интерфейс при использовании вспомогательных методов, таких как `$this->authorize` или`Gate::authorize`, из ваших маршрутов или контроллеров.
 
 ### Job Middleware
 
@@ -81,8 +79,14 @@ _Job middleware were implemented by [Taylor Otwell](https://github.com/taylorotw
 
 Job middleware allow you to wrap custom logic around the execution of queued jobs, reducing boilerplate in the jobs themselves. For example, in previous releases of Laravel, you may have wrapped the logic of a job's `handle` method within a rate-limited callback:
 
+### Промежуточное программное обеспечение выполнения задач, работ
+
+_Промежуточное программное обеспечение выполнения задач, работ было реализовано [Taylor Otwell](https://github.com/taylorotwell)_.
+
+Промежуточное программное обеспечение работ позволяет вам обернуть пользовательскую логику в выполнение заданий, поставленных в очередь, что сокращает количество стандартных заданий. Например, в предыдущих выпусках Laravel вы могли обернуть логику метода handle для задания в обратный вызов с ограниченной скоростью:
+
     /**
-     * Execute the job.
+     * Выполнить работу.
      *
      * @return void
      */
@@ -99,7 +103,7 @@ Job middleware allow you to wrap custom logic around the execution of queued job
         });
     }
 
-In Laravel 6, this logic may be extracted into a job middleware, allowing you to keep your job's `handle` method free of any rate limiting responsibilities:
+В Laravel 6 эта логика может быть извлечена в промежуточное программное обеспечение для работы, позволяя вам освободить метод "обработки" вашей работы от любых обязанностей, ограничивающих скорость:
 
     <?php
 
@@ -110,7 +114,7 @@ In Laravel 6, this logic may be extracted into a job middleware, allowing you to
     class RateLimited
     {
         /**
-         * Process the queued job.
+         * Обработать работу в очереди.
          *
          * @param  mixed  $job
          * @param  callable  $next
@@ -132,7 +136,7 @@ In Laravel 6, this logic may be extracted into a job middleware, allowing you to
         }
     }
 
-After creating middleware, they may be attached to a job by returning them from the job's `middleware` method:
+После создания промежуточного программного обеспечения их можно прикрепить к заданию, вернув их из метода `middleware` задания:
 
     use App\Jobs\Middleware\RateLimited;
 
@@ -146,13 +150,14 @@ After creating middleware, they may be attached to a job by returning them from 
         return [new RateLimited];
     }
 
-### Lazy Collections
 
-_Lazy collections were implemented by [Joseph Silber](https://github.com/JosephSilber)_.
+### Ленивые Коллекции
 
-Many developers already enjoy Laravel's powerful [Collection methods](https://laravel.com/docs/collections). To supplement the already powerful `Collection` class, Laravel 6 introduces a `LazyCollection`, which leverages PHP's [generators](https://www.php.net/manual/en/language.generators.overview.php) to allow you to work with very large datasets while keeping memory usage low.
+_Ленивые коллекции были реализованы [Джозефом Силбером](https://github.com/JosephSilber)_.
 
-For example, imagine your application needs to process a multi-gigabyte log file while taking advantage of Laravel's collection methods to parse the logs. Instead of reading the entire file into memory at once, lazy collections may be used to keep only a small part of the file in memory at a given time:
+Многим разработчикам уже нравятся мощные [методы сбора] Laravel (https://laravel.com/docs/collections). В дополнение к уже мощному классу `Collection`, Laravel 6 представляет `LazyCollection`, который использует PHP [generators](https://www.php.net/manual/en/language.generators.overview.php), чтобы позволить вам работать с очень большими наборами данных при сохранении низкого использования памяти.
+
+Например, представьте, что вашему приложению требуется обработать файл журнала размером в несколько гигабайт, используя преимущества методов сбора данных Laravel для анализа журналов. Вместо одновременного чтения всего файла в память, ленивые коллекции могут использоваться для хранения только небольшой части файла в памяти в данный момент времени:
 
     use App\LogEntry;
     use Illuminate\Support\LazyCollection;
@@ -172,13 +177,13 @@ For example, imagine your application needs to process a multi-gigabyte log file
         // Process the log entry...
     });
 
-Or, imagine you need to iterate through 10,000 Eloquent models. When using traditional Laravel collections, all 10,000 Eloquent models must be loaded into memory at the same time:
+Или представьте, что вам нужно перебрать 10 000 моделей Eloquent. При использовании традиционных коллекций Laravel все 10 000 моделей Eloquent должны быть загружены в память одновременно:
 
     $users = App\User::all()->filter(function ($user) {
         return $user->id > 500;
     });
 
-However, beginning in Laravel 6, the query builder's `cursor` method has been updated to return a `LazyCollection` instance. This allows you to still only run a single query against the database but also only keep one Eloquent model loaded in memory at a time. In this example, the `filter` callback is not executed until we actually iterate over each user individually, allowing for a drastic reduction in memory usage:
+Однако, начиная с Laravel 6, метод курсора строителя запросов был обновлен, чтобы возвращать экземпляр `LazyCollection`. Это позволяет вам по-прежнему выполнять только один запрос к базе данных, но одновременно сохранять в памяти только одну модель Eloquent. В этом примере обратный вызов `filter` не выполняется до тех пор, пока мы фактически не проведем итерацию по каждому пользователю индивидуально, что позволяет значительно сократить использование памяти:
 
     $users = App\User::cursor()->filter(function ($user) {
         return $user->id > 500;
@@ -188,13 +193,15 @@ However, beginning in Laravel 6, the query builder's `cursor` method has been up
         echo $user->id;
     }
 
-### Eloquent Subquery Enhancements
+### Расширения Eloquent Subquery
 
-_Eloquent subquery enhancements were implemented by [Jonathan Reinink](https://github.com/reinink)_.
+_Прекрасные усовершенствования подзапроса были реализованы [Jonathan Reinink](https://github.com/reinink)_.
 
-Laravel 6 introduces several new enhancements and improvements to database subquery support. For example, let's imagine that we have a table of flight `destinations` and a table of `flights` to destinations. The `flights` table contains an `arrived_at` column which indicates when the flight arrived at the destination.
+Laravel 6 представляет несколько новых улучшений и улучшений поддержки подзапросов к базам данных.
+Например, давайте представим, что у нас есть таблица пунктов назначения рейсов `destinations` и таблица пунктов назначения `flights`.
+В таблице `flights` содержится столбец `Arrive_at`, который указывает, когда рейс прибыл в пункт назначения.
 
-Using the new subquery select functionality in Laravel 6, we can select all of the `destinations` and the name of the flight that most recently arrived at that destination using a single query:
+Используя новую функцию выбора подзапроса в Laravel 6, мы можем выбрать все пункты назначения и название рейса, который последний раз прибыл в этот пункт назначения, используя один запрос:
 
     return Destination::addSelect(['last_flight' => Flight::select('name')
         ->whereColumn('destination_id', 'destinations.id')
@@ -202,7 +209,7 @@ Using the new subquery select functionality in Laravel 6, we can select all of t
         ->limit(1)
     ])->get();
 
-In addition, we can use new subquery features added to the query builder's `orderBy` function to sort all destinations based on when the last flight arrived at that destination. Again, this may be done while executing a single query against the database:
+Кроме того, мы можем использовать новые функции подзапросов, добавленные в функцию orderBy строителя запросов, чтобы отсортировать все пункты назначения в зависимости от того, когда последний рейс прибыл в этот пункт назначения. Опять же, это может быть сделано при выполнении одного запроса к базе данных:
 
     return Destination::orderByDesc(
         Flight::select('arrived_at')
@@ -211,12 +218,14 @@ In addition, we can use new subquery features added to the query builder's `orde
             ->limit(1)
     )->get();
 
+
 ### Laravel UI
 
-The frontend scaffolding typically provided with previous releases of Laravel has been extracted into a `laravel/ui` Composer package. This allows the first-party UI scaffolding to be developed and versioned separately from the primary framework. As a result of this change, no Bootstrap or Vue code is present in default framework scaffolding, and the `make:auth` command has been extracted from the framework as well.
+Геннерация Frontend-а (Виды, контролеры, маршруты), обычно предоставляемые в предыдущих выпусках Laravel, были извлечены в пакет Composer `laravel/ui`. Это позволяет создавать собственные пользовательские интерфейсы и создавать версии отдельно от основной среды. В результате этого изменения в базовом каркасе фреймворка по умолчанию отсутствует код Bootstrap или Vue, а также была извлечена команда `make:auth` из фреймворка.
 
-In order to restore the traditional Vue / Bootstrap scaffolding present in previous releases of Laravel, you may install the `laravel/ui` package and use the `ui` Artisan command to install the frontend scaffolding:
+Чтобы восстановить традиционные леса Vue/Bootstrap, которые присутствовали в предыдущих выпусках Laravel, вы можете установить пакет `laravel/ui` и use команду`ui` Artisan для установки лесов внешнего интерфейса:
 
     composer require laravel/ui --dev
 
     php artisan ui vue --auth
+
