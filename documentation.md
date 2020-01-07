@@ -1,17 +1,17 @@
-- ## Prologue
-    - [Release Notes](/docs/{{version}}/releases)
-    - [Upgrade Guide](/docs/{{version}}/upgrade)
-    - [Contribution Guide](/docs/{{version}}/contributions)
-    - [API Documentation](/api/6.x)
-- ## Getting Started
-    - [Installation](/docs/{{version}}/installation)
-    - [Configuration](/docs/{{version}}/configuration)
-    - [Directory Structure](/docs/{{version}}/structure)
-    - [Homestead](/docs/{{version}}/homestead)
-    - [Valet](/docs/{{version}}/valet)
-    - [Deployment](/docs/{{version}}/deployment)
-- ## Architecture Concepts
-    - [Request Lifecycle](/docs/{{version}}/lifecycle)
+- ## Пролог
+    - [Заметки релиза](/docs/{{version}}/releases)
+    - [Руководство по обновлению](/docs/{{version}}/upgrade)
+    - [Руководсто разработчика](/docs/{{version}}/contributions)
+    - [API документация](/api/6.x)
+- ## Первые шаги
+    - [Установка](/docs/{{version}}/installation)
+    - [Конфигурация](/docs/{{version}}/configuration)
+    - [Структура каталогов](/docs/{{version}}/structure)
+    - [Vagrant Box](/docs/{{version}}/homestead)
+    - [Valet for Mac](/docs/{{version}}/valet)
+    - [Развертывание](/docs/{{version}}/deployment)
+- ## Концепт архитектуры
+    - [Жизненый цикл запроса](/docs/{{version}}/lifecycle)
     - [Service Container](/docs/{{version}}/container)
     - [Service Providers](/docs/{{version}}/providers)
     - [Facades](/docs/{{version}}/facades)
